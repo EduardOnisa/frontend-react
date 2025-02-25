@@ -1,7 +1,6 @@
 import json
-import os
 from flask import Flask, jsonify
-from flask_cors import CORS # type: ignore
+from flask_cors import CORS  # type: ignore
 
 app = Flask(__name__)
 CORS(app)
@@ -9,7 +8,6 @@ CORS(app)
 def load_fake_db():
     try:
         json_file_path = './db.json'
-        
         with open(json_file_path, 'r') as f:
             db_data = json.load(f)
             if isinstance(db_data, dict):
@@ -18,18 +16,6 @@ def load_fake_db():
                 return {"error": "Il contenuto del file JSON non è un dizionario valido."}
     except Exception as e:
         return {"error": f"Errore nel caricamento dei dati: {str(e)}"}
-
-@app.route('/wp', methods=['GET'])
-def get_wp():
-    return jsonify(load_fake_db().get("wp", []))
-
-@app.route('/progetto', methods=['GET'])
-def get_progetto():
-    return jsonify(load_fake_db().get("progetto", []))
-
-@app.route('/docente', methods=['GET'])
-def get_docente():
-    return jsonify(load_fake_db().get("docente", []))
 
 @app.route('/professori', methods=['GET'])
 def get_professori():
@@ -56,4 +42,4 @@ def internal_server_error(error):
     return jsonify({"error": "Errore interno del server"}), 500
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5004)
+    app.run(host='0.0.0.0', port=5004, debug=True)
