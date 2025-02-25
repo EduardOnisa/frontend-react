@@ -1,0 +1,30 @@
+{
+  "professori": [
+    {"id": 1, "nome": "Prof. Alessandro Rossi", "email": "alessandro.rossi@example.com", "materia": "Matematica"},
+    {"id": 2, "nome": "Prof.ssa Giulia Bianchi", "email": "giulia.bianchi@example.com", "materia": "Fisica"},
+    {"id": 3, "nome": "Prof. Marco Verdi", "email": "marco.verdi@example.com", "materia": "Chimica"},
+    {"id": 4, "nome": "Prof.ssa Elena Neri", "email": "elena.neri@example.com", "materia": "Biologia"},
+    {"id": 5, "nome": "Prof. Luca Gialli", "email": "luca.gialli@example.com", "materia": "Informatica"}
+  ],
+  "ricercatori": [
+    {"id": 1, "nome": "Dott. Paolo Rossi", "ambito": "Intelligenza Artificiale"},
+    {"id": 2, "nome": "Dott.ssa Chiara Bianchi", "ambito": "Fisica Quantistica"},
+    {"id": 3, "nome": "Dott. Davide Verdi", "ambito": "Biotecnologie"},
+    {"id": 4, "nome": "Dott.ssa Francesca Neri", "ambito": "Scienze Ambientali"},
+    {"id": 5, "nome": "Dott. Matteo Gialli", "ambito": "Robotica"}
+  ],
+  "ordinari": [
+    {"id": 1, "nome": "Prof. Antonio Rossi", "dipartimento": "Matematica"},
+    {"id": 2, "nome": "Prof.ssa Serena Bianchi", "dipartimento": "Fisica"},
+    {"id": 3, "nome": "Prof. Giorgio Verdi", "dipartimento": "Chimica"},
+    {"id": 4, "nome": "Prof.ssa Laura Neri", "dipartimento": "Biologia"},
+    {"id": 5, "nome": "Prof. Andrea Gialli", "dipartimento": "Informatica"}
+  ],
+  "associati": [
+    {"id": 1, "nome": "Prof. Riccardo Rossi", "specializzazione": "Analisi Matematica"},
+    {"id": 2, "nome": "Prof.ssa Valentina Bianchi", "specializzazione": "Fisica Teorica"},
+    {"id": 3, "nome": "Prof. Stefano Verdi", "specializzazione": "Chimica Organica"},
+    {"id": 4, "nome": "Prof.ssa Martina Neri", "specializzazione": "Genetica"},
+    {"id": 5, "nome": "Prof. Federico Gialli", "specializzazione": "Sicurezza Informatica"}
+  ]
+}
